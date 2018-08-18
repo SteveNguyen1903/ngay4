@@ -6351,7 +6351,7 @@ footer img {
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
       opacity: 0;
-      transition: .5s all ease-in-out; }
+      transition: .3s all ease-in-out; }
     .home-news .item a figure .blocking i {
       position: absolute;
       top: 50%;
@@ -6360,7 +6360,7 @@ footer img {
       font-size: 3rem;
       transform: translateX(-50%) translateY(-50%);
       opacity: 0;
-      transition: .5s all ease-in-out; }
+      transition: .3s all ease-in-out; }
   .home-news .item a figure img {
     width: 100%; }
   .home-news .item a figure figcaption h3 {
