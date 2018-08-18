@@ -6336,60 +6336,34 @@ header .navbar-brand img {
 footer img {
   max-width: 200px; }
 
-.home-slider .owl-carousel .item {
-  position: relative; }
-  .home-slider .owl-carousel .item .title {
-    padding-top: 2rem;
-    padding-right: 0;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center; }
-  @media (min-width: 768px) {
-    .home-slider .owl-carousel .item .title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: #ffffff;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
-      .home-slider .owl-carousel .item .title h2 {
-        font-size: 3rem; }
-      .home-slider .owl-carousel .item .title p {
-        font-size: 1.5rem;
-        line-height: 2rem; } }
-
-.home-slider .owl-carousel .owl-dots {
-  margin-bottom: 2rem; }
-
-.home-news .item figure .blockimg {
-  border-radius: 10px;
-  overflow: hidden; }
-  .home-news .item figure .blockimg img {
+.home-news .item a {
+  text-decoration: none; }
+  .home-news .item a figure .blocking {
+    border-radius: 10px;
+    overflow: hidden; }
+  .home-news .item a figure img {
     width: 100%; }
-
-.home-news .item figure figcaption {
-  margin-top: 1rem; }
-  .home-news .item figure figcaption h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0; }
-  .home-news .item figure figcaption time {
-    font-size: 0.85rem;
-    color: #b3b3b3; }
-  .home-news .item figure figcaption p {
-    margin-top: .5rem;
-    color: gray; }
-
-.home-clients .owl-carousel .item {
-  padding: 0.5rem; }
-
-.home-clients .owl-carousel .owl-nav {
-  margin-bottom: 2rem; }
-  .home-clients .owl-carousel .owl-nav button i {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem; }
+  .home-news .item a figure figcaption h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: .75rem;
+    line-height: 1.2rem;
+    margin-bottom: 0;
+    color: #000; }
+  .home-news .item a figure figcaption time {
+    color: #b3b3b3;
+    font-size: .85rem;
+    line-height: .9rem; }
+  .home-news .item a figure figcaption p {
+    color: #b3b3b3;
+    line-height: 1.2rem;
+    font-size: .9rem;
+    height: 3.6rem;
+    overflow: hidden;
+    margin-top: .25rem; }
+  .home-news .item a:hover figure figcaption h3, .home-news .item a:active figure figcaption h3 {
+    color: #9644a2; }
+  .home-news .item a:hover figure figcaption p, .home-news .item a:active figure figcaption p {
+    font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */

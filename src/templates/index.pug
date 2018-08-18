@@ -6,6 +6,57 @@ block variables
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
 
+//- Code dùng chung
+mixin home_news(text1,text2,text3)
+	- for(x = 1; x < 4; x++)
+		.col-md-4.item
+			a(href="#")
+				figure
+					.blocking
+						img(src="/img/img_"+x+".png", alt="")
+					figcaption
+						h3 fefaefwefwa
+						time 12/04/2018
+						- if(x == 1)
+							p=text1
+						- else if(x == 2)
+							p=text2
+						- else
+							p=text3
+
 //- Phần khai báo body
 block body
-	
+	section.home-news
+		.container
+			.row
+				.col-md-4.item
+					a(href="#")
+						figure
+							.blocking
+								img(src="/img/img_1.png", alt="")
+							figcaption
+								h3 fefaefwefwa
+								time 12/04/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore.
+				.col-md-4.item
+					a(href="#")
+						figure
+							.blocking
+								img(src="/img/img_2.png", alt="")
+							figcaption
+								h3 fefaefwefwa
+								time 12/04/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore.
+				.col-md-4.item
+					a(href="#")
+						figure
+							.blocking
+								img(src="/img/img_3.png", alt="")
+							figcaption
+								h3 fefaefwefwa
+								time 12/04/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore.
+
+
+			.row
+				+home_news("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat imilique delectus illo quaerat ducimus distinctio suscipit consequatur tempore","Laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore","Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore")
