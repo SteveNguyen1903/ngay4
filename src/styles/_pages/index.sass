@@ -52,19 +52,6 @@
 // // Phần News
 // /////////////////////////////////
 
-// .home-clients
-// 	.owl-carousel
-// 		.item 
-// 			+pad(.5rem)
-// 		// Phần Control
-// 		.owl-nav
-// 			margin-bottom: 2rem
-// 			button 
-// 				i 
-// 					display: block
-// 					width: 2rem
-// 					height: 2rem
-// 					+lh(2rem)
 
 .home-news
 	.item
@@ -129,3 +116,27 @@
 							color: #9644a2
 						p
 							font-weight: 500
+// // menu
+// box-shadow: 3px 0 0 0 #000 inset
+
+.home-clients
+	.owl-carousel
+		.item 
+			padding: .5rem
+		.owl-nav
+			margin-bottom: 1.5rem
+			button
+				background: #083e64
+				i
+					color: #fff
+					display: block
+					width: 2rem
+					height: 2rem
+					+lh(2rem)
+			+media-breakpoint-up(lg)
+				.owl-prev
+					float: left
+					margin: -4rem 0 0 -3rem
+				.owl-next
+					float: right
+					margin: -4rem -3rem 0 0

@@ -6393,4 +6393,25 @@ footer img {
   .home-news .item a:hover figure figcaption p, .home-news .item a:active figure figcaption p {
     font-weight: 500; }
 
+.home-clients .owl-carousel .item {
+  padding: .5rem; }
+
+.home-clients .owl-carousel .owl-nav {
+  margin-bottom: 1.5rem; }
+  .home-clients .owl-carousel .owl-nav button {
+    background: #083e64; }
+    .home-clients .owl-carousel .owl-nav button i {
+      color: #fff;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem; }
+  @media (min-width: 992px) {
+    .home-clients .owl-carousel .owl-nav .owl-prev {
+      float: left;
+      margin: -4rem 0 0 -3rem; }
+    .home-clients .owl-carousel .owl-nav .owl-next {
+      float: right;
+      margin: -4rem -3rem 0 0; } }
+
 /*# sourceMappingURL=main.css.map */

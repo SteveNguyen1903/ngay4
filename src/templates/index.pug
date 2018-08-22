@@ -16,7 +16,7 @@ mixin home_news(text1,text2,text3)
 						i.fa.fa-eye
 						img(src="/img/img_"+x+".png", alt="")
 					figcaption
-						h3 fefaefwefwa
+						h3 Trung tâm đào tạo IT chuyên nghiệp
 						time 12/04/2018
 						- if(x == 1)
 							p=text1
@@ -29,7 +29,7 @@ mixin home_news(text1,text2,text3)
 block body
 	section.home-news
 		.container
-			.row
+			//- .row
 				.col-md-4.item
 					a(href="#")
 						figure
@@ -69,10 +69,11 @@ block body
 		.container
 			.row
 				.col
-					.owl-carousel.owl-theme
-						- for(x = 1; x < 7; x++)
-							.items
+					.owl-carousel.owl-theme.mt-3
+						- for(x = 1; x < 10; x++)
+							.item
 								if(x<7)
 									img(src="img/clients_"+x+".png", alt="")
 								else
 									img(src="img/clients_"+(x-3)+".png", alt="")
+
