@@ -27,6 +27,14 @@ mixin home_news(text1,text2,text3)
 
 //- Phần khai báo body
 block body
+	section.home-slider
+		.container-fluid.no-gutters
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x = 1; x < 4; x++)
+							.item
+								img(src="img/home_slider_1.jpg", alt="")
 	section.home-news
 		.container
 			//- .row
