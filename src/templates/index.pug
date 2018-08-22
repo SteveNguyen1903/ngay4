@@ -64,3 +64,11 @@ block body
 
 			.row
 				+home_news("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat imilique delectus illo quaerat ducimus distinctio suscipit consequatur tempore","Laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore","Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore")
+
+	section.home-clients
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x = 1; x < 7; x++)
+							img(src="img/clients_"+x+".png", alt="")
