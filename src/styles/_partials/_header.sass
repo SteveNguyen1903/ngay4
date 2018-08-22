@@ -1,12 +1,32 @@
 header
 	.navbar
-		+pad(null 0)
+		padding: 0
 	.navbar-brand
 		img 
 			max-height: 2rem
-	+media-breakpoint-up(md)
+	li.nav-item.active,
+	li.nav-item:hover
+		box-shadow: 3px 0 0 0 #9644a2 inset
+		padding-left: 1rem
+		transition: .4s all ease-in-out
+		a
+			color: #9644a2 !important
+	li
+		line-height: default
+		font-size: 1.2rem
+		font-weight: 400
+	+media-breakpoint-up(lg)
 		.navbar-brand
 			img 
 				max-height: 3rem
-		li.nav-item.active
-			box-shadow: 0 2px 0 0 #000 inset
+		li.nav-item.active,
+		li.nav-item:hover
+			box-shadow: 0 3px 0 0 #9644a2 inset
+			transition: .4s all ease-in-out
+			padding-left: 0
+			a
+				color: #9644a2 !important
+		li
+			line-height: 3rem
+			font-size: 1.2rem
+			font-weight: 400

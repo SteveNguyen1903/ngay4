@@ -6323,44 +6323,62 @@ html, body {
     width: auto; } }
 
 header .navbar {
-  padding-right: 0;
-  padding-left: 0; }
+  padding: 0; }
 
 header .navbar-brand img {
   max-height: 2rem; }
 
-@media (min-width: 768px) {
+header li.nav-item.active,
+header li.nav-item:hover {
+  box-shadow: 3px 0 0 0 #9644a2 inset;
+  padding-left: 1rem;
+  transition: .4s all ease-in-out; }
+  header li.nav-item.active a,
+  header li.nav-item:hover a {
+    color: #9644a2 !important; }
+
+header li {
+  line-height: default;
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+@media (min-width: 992px) {
   header .navbar-brand img {
     max-height: 3rem; }
-  header li.nav-item.active {
-    box-shadow: 0 2px 0 0 #000 inset; } }
+  header li.nav-item.active,
+  header li.nav-item:hover {
+    box-shadow: 0 3px 0 0 #9644a2 inset;
+    transition: .4s all ease-in-out;
+    padding-left: 0; }
+    header li.nav-item.active a,
+    header li.nav-item:hover a {
+      color: #9644a2 !important; }
+  header li {
+    line-height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400; } }
 
 footer img {
   max-width: 200px; }
 
 .home-slider .owl-carousel .item {
   position: relative; }
-  .home-slider .owl-carousel .item .content {
-    padding-top: 2rem;
-    padding-right: 0;
-    padding-bottom: 2rem;
-    padding-left: 0;
+  .home-slider .owl-carousel .item .content-text {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center; }
   @media (min-width: 768px) {
-    .home-slider .owl-carousel .item .title {
+    .home-slider .owl-carousel .item .content-text {
       position: absolute;
       top: 0;
       left: 0;
-      color: #ffffff;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
-      .home-slider .owl-carousel .item .title h2 {
+      color: #fff;
+      text-shadow: 2px 0 3px #000; }
+      .home-slider .owl-carousel .item .content-text h2 {
         font-size: 3rem; }
-      .home-slider .owl-carousel .item .title p {
-        font-size: 1.5rem;
-        line-height: 2rem; } }
+      .home-slider .owl-carousel .item .content-text p {
+        font-size: 1.4rem; } }
 
 .home-slider .owl-carousel .owl-dots {
   margin-bottom: 2rem; }

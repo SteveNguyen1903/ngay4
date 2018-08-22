@@ -1,37 +1,30 @@
-// /////////////////////////////////
-// // Phần Slider
-// /////////////////////////////////
+// Home slider
 .home-slider
 	.owl-carousel
 		// Phần Slider
 		.item
 			position: relative
-			.content
-				+pad(2rem 0)
+			.content-text
 				height: 100%
 				width: 100%
 				display: flex
 				align-items: center
 			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
+				.content-text
+					position: absolute
+					top: 0
+					left: 0
+					color: #fff
+					text-shadow: 2px 0 3px #000
 					h2
-						+fz(3rem)
+						font-size: 3rem
 					p 
-						+fz(1.5rem)
-						+lh(2rem)
+						font-size: 1.4rem
 		// Phần Control
 		.owl-dots
 			margin-bottom: 2rem
 
 
-// .home-slider
-// 	.item
-// 		position: relative
-// 		.content
-// 			+pos(abs, 0 null null 0)
 .home-news
 	.item
 		a
