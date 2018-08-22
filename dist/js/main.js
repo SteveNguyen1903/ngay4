@@ -67,6 +67,7 @@ $('.owl-carousel').owlCarousel({
     margin: 10,
     nav: true,
     dots: true,
+    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
     items: 1,
     responsive: {
         480: {

@@ -71,4 +71,8 @@ block body
 				.col
 					.owl-carousel.owl-theme
 						- for(x = 1; x < 7; x++)
-							img(src="img/clients_"+x+".png", alt="")
+							.items
+								if(x<7)
+									img(src="img/clients_"+x+".png", alt="")
+								else
+									img(src="img/clients_"+(x-3)+".png", alt="")
