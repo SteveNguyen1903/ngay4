@@ -6338,6 +6338,33 @@ header .navbar-brand img {
 footer img {
   max-width: 200px; }
 
+.home-slider .owl-carousel .item {
+  position: relative; }
+  .home-slider .owl-carousel .item .content {
+    padding-top: 2rem;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+  @media (min-width: 768px) {
+    .home-slider .owl-carousel .item .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+      .home-slider .owl-carousel .item .title h2 {
+        font-size: 3rem; }
+      .home-slider .owl-carousel .item .title p {
+        font-size: 1.5rem;
+        line-height: 2rem; } }
+
+.home-slider .owl-carousel .owl-dots {
+  margin-bottom: 2rem; }
+
 .home-news .item a {
   text-decoration: none; }
   .home-news .item a figure .blocking {
