@@ -6331,7 +6331,9 @@ header .navbar-brand img {
 
 @media (min-width: 768px) {
   header .navbar-brand img {
-    max-height: 3rem; } }
+    max-height: 3rem; }
+  header li.nav-item.active {
+    box-shadow: 0 2px 0 0 #000 inset; } }
 
 footer img {
   max-width: 200px; }
