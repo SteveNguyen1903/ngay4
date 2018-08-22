@@ -1,3 +1,77 @@
 footer
+	background: #00c4c9
+	.container-fluid.bottom-footer
+		background: #083e64
+		color: #fff
+		.col-sm-6
+			display: flex
+			justify-content: center
+			align-items: center
+			p
+				margin-bottom: 0
+		+media-breakpoint-up(md)
+			padding: 1.2rem 0
+			.team_social_icon
+				float: right
+	ul
+		margin-bottom: 0
 	img 
 		max-width: 200px
+	h5
+		min-height: 1.25rem
+		color: #065574
+	ul
+		li
+			line-height: 1.2rem
+			font-size: .9rem
+			position: relative
+			a
+				color: #7bfcff
+	ul.details
+		li:before
+			content: "\f061"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			color: #7bfcff
+			font-size: 1rem
+			padding-right: 0.5em
+			position: relative
+			top: 0px
+			left: 0
+
+// social icons
+
+.team_social_icon
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	ul
+		li
+			a
+				display: block
+				height: 2rem
+				line-height: 2rem
+				border-radius: 50%
+				background: #ffffff
+				width: 2rem
+				transition: .3s all ease-in-out
+			&:hover,
+			&:active
+				a
+					background: #000000
+					color: #ffffff
+// responsive
++media-breakpoint-up(sm)
+	min-height: 300px
++media-breakpoint-down(sm)
+	.col-md-4:last-child
+		h5
+			display: none
+	.col-md-4:nth-child(2)
+		ul
+			margin-bottom: 0
+
+
