@@ -112,3 +112,37 @@
 				.owl-next
 					float: right
 					margin: -4rem -3rem 0 0
+.home-info
+	background: #00c4c9
+	img 
+		max-width: 200px
+	h5
+		min-height: 1.25rem
+		color: #065574
+	ul
+		margin-bottom: 0
+		li
+			line-height: 1.2rem
+			font-size: .9rem
+			position: relative
+			a
+				color: #7bfcff
+	.details
+		li:before
+			content: "\f061"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			color: #7bfcff
+			font-size: 1rem
+			padding-right: 0.5em
+			position: relative
+			top: 0px
+			left: 0
+	+media-breakpoint-down(sm)
+		h5
+			padding-top: 1.5rem
+		.col-md-4:last-child
+			h5
+				display: none

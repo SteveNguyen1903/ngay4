@@ -6359,72 +6359,42 @@ header li {
     font-weight: 400; } }
 
 footer {
-  background: #00c4c9; }
-  footer .container-fluid.bottom-footer {
-    background: #083e64;
-    color: #fff; }
-    footer .container-fluid.bottom-footer .col-sm-6 {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      footer .container-fluid.bottom-footer .col-sm-6 p {
-        margin-bottom: 0; }
-    @media (min-width: 768px) {
-      footer .container-fluid.bottom-footer {
-        padding: 1.2rem 0; }
-        footer .container-fluid.bottom-footer .team_social_icon {
-          float: right; } }
-  footer ul {
-    margin-bottom: 0; }
-  footer img {
-    max-width: 200px; }
-  footer h5 {
-    min-height: 1.25rem;
-    color: #065574; }
-  footer ul li {
-    line-height: 1.2rem;
-    font-size: .9rem;
-    position: relative; }
-    footer ul li a {
-      color: #7bfcff; }
-  footer ul.details li:before {
-    content: "\f061";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    color: #7bfcff;
-    font-size: 1rem;
-    padding-right: 0.5em;
-    position: relative;
-    top: 0px;
-    left: 0; }
-
-.team_social_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .team_social_icon ul li a {
-    display: block;
-    height: 2rem;
-    line-height: 2rem;
-    border-radius: 50%;
-    background: #ffffff;
-    width: 2rem;
-    transition: .3s all ease-in-out; }
-  .team_social_icon ul li:hover a, .team_social_icon ul li:active a {
-    background: #000000;
-    color: #ffffff; }
-
-@media (min-width: 576px) {
-  min-height: 300px; }
+  background: #083e64;
+  color: #fff; }
+  footer .col-sm-6 {
+    line-height: 3rem;
+    display: flex;
+    align-items: center; }
+    footer .col-sm-6 p {
+      margin-bottom: 0; }
+  footer .team_social_icon {
+    padding-bottom: 1rem; }
+    footer .team_social_icon ul {
+      margin-bottom: 0;
+      line-height: 2rem; }
+      footer .team_social_icon ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: block;
+        height: 2rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        background: #ffffff;
+        width: 2rem;
+        transition: .3s all ease-in-out; }
+      footer .team_social_icon ul li:hover a, footer .team_social_icon ul li:active a {
+        background: #000000;
+        color: #ffffff; }
+    @media (min-width: 576px) {
+      footer .team_social_icon {
+        justify-content: flex-end;
+        padding-bottom: 0; } }
 
 @media (max-width: 767.98px) {
-  .col-md-4:last-child h5 {
-    display: none; }
-  .col-md-4:nth-child(2) ul {
-    margin-bottom: 0; } }
+  .col-sm-6 {
+    justify-content: center; } }
 
 .home-slider .owl-carousel .item {
   position: relative; }
@@ -6523,5 +6493,38 @@ footer {
     .home-clients .owl-carousel .owl-nav .owl-next {
       float: right;
       margin: -4rem -3rem 0 0; } }
+
+.home-info {
+  background: #00c4c9; }
+  .home-info img {
+    max-width: 200px; }
+  .home-info h5 {
+    min-height: 1.25rem;
+    color: #065574; }
+  .home-info ul {
+    margin-bottom: 0; }
+    .home-info ul li {
+      line-height: 1.2rem;
+      font-size: .9rem;
+      position: relative; }
+      .home-info ul li a {
+        color: #7bfcff; }
+  .home-info .details li:before {
+    content: "\f061";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #7bfcff;
+    font-size: 1rem;
+    padding-right: 0.5em;
+    position: relative;
+    top: 0px;
+    left: 0; }
+  @media (max-width: 767.98px) {
+    .home-info h5 {
+      padding-top: 1.5rem; }
+    .home-info .col-md-4:last-child h5 {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */
