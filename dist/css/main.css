@@ -6435,8 +6435,7 @@ footer {
     text-decoration: none; }
     .home-news .item a figure .blocking {
       overflow: hidden;
-      position: relative;
-      border: 4px solid transparent; }
+      position: relative; }
       .home-news .item a figure .blocking:before {
         display: block;
         content: "";
@@ -6472,11 +6471,12 @@ footer {
       filter: grayscale(0%);
       transition: .3s all ease-in-out; }
     .home-news .item a:hover figure .blocking, .home-news .item a:active figure .blocking {
-      border: 4px solid #00c4c9;
       transition: .3s all ease-in-out; }
       .home-news .item a:hover figure .blocking:before, .home-news .item a:active figure .blocking:before {
-        opacity: 0;
-        top: 0; }
+        opacity: 1;
+        top: 0;
+        box-shadow: 0 0 0 4px #00c4c9 inset;
+        z-index: 100; }
     .home-news .item a:hover figure figcaption h3, .home-news .item a:active figure figcaption h3 {
       color: #00c4c9;
       transition: .3s all ease-in-out; }
