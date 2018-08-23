@@ -6,81 +6,48 @@ block variables
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
 
-//- Code dùng chung
-mixin home_news(text1,text2,text3)
-	- for(x = 1; x < 4; x++)
-		.col-md-4.item
-			a(href="#")
-				figure
-					.blocking
-						i.fa.fa-eye
-						img(src="img/home_news_"+x+".jpg", alt="")
-					figcaption
-						h3 Trung tâm đào tạo IT chuyên nghiệp
-						time 12/04/2018
-						- if(x == 1)
-							p=text1
-						- else if(x == 2)
-							p=text2
-						- else
-							p=text3
-
 //- Phần khai báo body
 block body
-	section.home-slider
-		.owl-carousel.owl-theme
-			- for(x = 1; x < 4; x++)
-				.item
-					img(src="img/home_slider_1.jpg", alt="")
-					.content-text
-						.container
-							.row
-								.col-md-8
-									h2 Chúng tôi là Fullstack Viet Nam
-									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quasi eius doloribus autem nihil consequatur perferendis quidem quas inventore placeat accusamus quae natus voluptatibus, fugiat nostrum itaque. Quia, tenetur sequi!
 	section.home-news
 		.container
-			//- .row
-				.col-md-4.item
-					a(href="#")
-						figure
-							.blocking
-								i.fa.fa-eye
-								img(src="/img/img_1.png", alt="")
-							figcaption
-								h3 fefaefwefwa
-								time 12/04/2018
-								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore.
-				.col-md-4.item
-					a(href="#")
-						figure
-							.blocking
-								i.fa.fa-eye
-								img(src="/img/img_2.png", alt="")
-							figcaption
-								h3 fefaefwefwa
-								time 12/04/2018
-								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore.
-				.col-md-4.item
-					a(href="#")
-						figure
-							.blocking
-								i.fa.fa-eye
-								img(src="/img/img_3.png", alt="")
-							figcaption
-								h3 fefaefwefwa
-								time 12/04/2018
-								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore.
-
-
 			.row
-				+home_news("Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet molestias quisquam ut placeat imilique delectus illo quaerat ducimus distinctio suscipit consequatur tempore","Laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore","Quidem eveniet molestias quisquam ut placeat maxime deserunt laudantium qui, doloremque dolor iure similique delectus illo quaerat ducimus distinctio suscipit consequatur tempore")
+				.col
+					h2 TIN TỨC
+			.row
+				.col-md-4.item
+					a(href="#")
+						figure
+							.blocking
+								img(src="/img/home-news-1.png", alt="")
+							figcaption
+								h3 Trung tâm đào tạo IT chuyên nghiệp
+								time 26/08/2018
+								p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón khoảng 100 triệu lượt khách/năm, dự kiến khởi công vào tháng 6/2020 và đưa vào khai thác năm 2025. Bên cạnh việc giảm tải cho sân bay Tân Sơn Nhất
+				.col-md-4.item
+					a(href="#")
+						figure
+							.blocking
+								img(src="/img/home-news-2.png", alt="")
+							figcaption
+								h3 Trung tâm đào tạo IT chuyên nghiệp
+								time 26/08/2018
+								p Giữa năm 2017, cầu Cát Lái chính thức được phê duyệt đầu tư với số vốn lên tới 5,700 tỷ đồng. Cầu có chiều dài 4,5 km với 8 làn xe, vận tốc 80 km/h. Theo dự kiến, cầu sẽ hoàn thành trước năm 2020. Cầu Cát Lái có ý nghĩa đặc biệt quan trọng trong việc rút ngắn quãng đường, thời gian di chuyển từ Đồng Nai đến TP.HCM, giãn dân từ TP.HCM về Nhơn Trạch đồng thời đưa Nhơn Trạch trở thành ngoại ô của TP.HCM. 
+				.col-md-4.item
+					a(href="#")
+						figure
+							.blocking
+								img(src="/img/home-news-3.png", alt="")
+							figcaption
+								h3 Trung tâm đào tạo IT chuyên nghiệp
+								time 26/08/2018
+								p Dự án đường Vành đai 3 dài 90 km với 6 làn xe, vận tốc di chuyển 100 km/h, đi qua địa phận 4 tỉnh: TPHCM – Nhơn Trạch (Đồng Nai) – Bình Dương – Long An. Dự kiến đến Quý 2/2018 sẽ khởi công đoạn từ ngã tư quận Thủ Đức đến đường 25B (đường Tôn Đức Thắng) 
+
 
 	section.home-clients
 		.container
 			.row
 				.col
-					.owl-carousel.owl-theme.mt-3
+					.owl-carousel.owl-theme.mt-3.mb-4
 						- for(x = 1; x < 10; x++)
 							.item
 								if(x<7)
@@ -88,41 +55,3 @@ block body
 								else
 									img(src="img/clients_"+(x-3)+".png", alt="")
 
-	section.home-info
-		.container.py-5
-			.row
-				.col-md-4
-					h5 Fullstack Vietnam
-					ul.list-unstyled.text-small
-						li
-							a(href="#") Mobile: (+84) 969689893
-						li
-							a(href="#") Email: admin@fullstackvietnam.com
-						li
-							a(href="#") Địa chỉ: 28 đường số 2 – CITY LAND – Phường 7 – Gò Vấp – HCM
-				.col-md-4
-					h5 LINKS
-					ul.list-unstyled.text-small.details
-						li
-							a(href="#") Khóa học FrontEnd Master
-						li
-							a(href="#") Khóa học FullStack Developer
-						li
-							a(href="#") Khóa học Design chuyên nghiệp
-						li
-							a(href="#") Lịch khai giảng
-						li
-							a(href="#") Đăng ký Khóa học
-				.col-md-4
-					h5 
-					ul.list-unstyled.text-small.details
-						li
-							a(href="#") Khóa học FrontEnd Master
-						li
-							a(href="#") Khóa học FullStack Developer
-						li
-							a(href="#") Khóa học Design chuyên nghiệp
-						li
-							a(href="#") Lịch khai giảng
-						li
-							a(href="#") Đăng ký Khóa học
