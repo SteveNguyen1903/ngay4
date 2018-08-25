@@ -8,50 +8,32 @@ block variables
 
 //- Phần khai báo body
 block body
-	section.home-news
-		.container
-			.row
-				.col
-					h2 TIN TỨC
-			.row
-				.col-md-4.item
-					a(href="#")
-						figure
-							.blocking
-								img(src="img/home_news_1.png", alt="")
-							figcaption
-								h3 Trung tâm đào tạo IT chuyên nghiệp
-								time 26/08/2018
-								p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón khoảng 100 triệu lượt khách/năm, dự kiến khởi công vào tháng 6/2020 và đưa vào khai thác năm 2025. Bên cạnh việc giảm tải cho sân bay Tân Sơn Nhất
-				.col-md-4.item
-					a(href="#")
-						figure
-							.blocking
-								img(src="img/home_news_2.png", alt="")
-							figcaption
-								h3 Trung tâm đào tạo IT chuyên nghiệp
-								time 26/08/2018
-								p Giữa năm 2017, cầu Cát Lái chính thức được phê duyệt đầu tư với số vốn lên tới 5,700 tỷ đồng. Cầu có chiều dài 4,5 km với 8 làn xe, vận tốc 80 km/h. Theo dự kiến, cầu sẽ hoàn thành trước năm 2020. Cầu Cát Lái có ý nghĩa đặc biệt quan trọng trong việc rút ngắn quãng đường, thời gian di chuyển từ Đồng Nai đến TP.HCM, giãn dân từ TP.HCM về Nhơn Trạch đồng thời đưa Nhơn Trạch trở thành ngoại ô của TP.HCM. 
-				.col-md-4.item
-					a(href="#")
-						figure
-							.blocking
-								img(src="img/home_news_3.png", alt="")
-							figcaption
-								h3 Trung tâm đào tạo IT chuyên nghiệp
-								time 26/08/2018
-								p Dự án đường Vành đai 3 dài 90 km với 6 làn xe, vận tốc di chuyển 100 km/h, đi qua địa phận 4 tỉnh: TPHCM – Nhơn Trạch (Đồng Nai) – Bình Dương – Long An. Dự kiến đến Quý 2/2018 sẽ khởi công đoạn từ ngã tư quận Thủ Đức đến đường 25B (đường Tôn Đức Thắng) 
-
-
-	section.home-clients
-		.container
-			.row
-				.col
-					.owl-carousel.owl-theme.mt-3.mb-4
-						- for(x = 1; x < 10; x++)
-							.item
-								if(x<7)
-									img(src="img/clients_"+x+".png", alt="")
-								else
-									img(src="img/clients_"+(x-3)+".png", alt="")
+	section.home-nay
+		.item
+			.title
+				i.fa.fa-home
+				|
+				| HEHE s 01
+			.body Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio alias quas tempore sunt atque, illum exercitationem odit, quasi nisi, porro a! Non voluptatem quidem nostrum ipsam ad esse debitis asperiores.
+		//- 02
+		.item
+			.title
+				i.fa.fa-home
+				|
+				| fdsaffdsfd 02
+			.body Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio alias quas tempore sunt atque,
+		//- 03
+		.item
+			.title
+				i.fa.fa-home
+				|
+				| fwfaefefawe 03
+			.body Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio alias quas tempore sunt atque,
+		
+		.item
+			.title
+				i.fa.fa-home
+				|
+				| fwfaefefawe 04
+			.body Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio alias quas tempore sunt atque,
 
